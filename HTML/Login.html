@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="..//CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Instagram Login</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="login-box">
-            <h1><img src="../Imagenes/Instagram_logo_2016.svg.webp" alt="Logo"></h1>
-            <form>
-                <div class="input-group">
-                    <input type="text" placeholder="Username" required>
-                </div>
-                <div class="input-group">
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <a href="../Menu/Menu.html" class="login-btn">Log In</a>
-                <a href="#" class="forgot-password">Forgot password?</a>
+    <main>
+        <img src="../IMG/IG.jpeg" alt="" class="phoneImg">
+        <div class="form-div">
+            <form action="">
+                <img class="instaLogo" src="../IMG/instaLogo.png" alt="logo">
+                <input type="text" class="input" placeholder="phone number, username, or email" required>
+                <input type="password" class="input" required placeholder="Password">
+                <a href="..//HTML/Menu.html" class="login-btn">Log In</a>
+                <p id="or">or</p>
+                <a href="#" class="fb-login"><i class='bx bxl-facebook-square'></i>Log in with Facebook</a>
             </form>
+            <div class="sign-up">
+                <p>Don't have an account? <a href="#" class="sign-link">Sign up</a></p>
+            </div>
+            <div class="get-app">
+                <p>Get the app</p>
+                <div class="store">
+                    <img id="play" src="../IMG/playStore.png" alt="" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.instagram.android&hl=es_MX'">
+                    <img id="microsoft" src="../IMG/getMicrosoft.png" alt="" onclick="window.location.href='https://apps.microsoft.com/detail/9nblggh5l9xt?hl=es-es&gl=ES'">
+                </div>
+                
+            </div>
         </div>
-        <div class="signup-box">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
