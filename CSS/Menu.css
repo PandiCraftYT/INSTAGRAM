@@ -15,10 +15,11 @@ body{
 
 .header{
     height: 100vh;
-    width: 200px;
+    width: 250px;
     position: fixed;
+    border-right: 1px solid grey;
+    overflow-y: none;
 }
-
 .header-section_logo{
     display: flex;
     justify-content: center;
@@ -34,7 +35,6 @@ body{
 .nav-section_opciones{
     width: 200px;
 }
-
 .opcnav{
     display: flex;
     justify-content: space-around;
@@ -58,4 +58,10 @@ body{
 .opcnav img{
     width: 35px;
     height: 30px;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: auto;
 }
