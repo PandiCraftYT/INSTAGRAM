@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 }
-
 body{
     width: 100%;
     height: auto;
@@ -11,20 +10,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
 }
-
-
 .header{
     height: 100vh;
     width: 250px;
+    min-width: 90px;
     position: fixed;
     border-right: 1px solid grey;
     overflow-y: none;
+    background-color: #000000;
 }
 .header-section_logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 249px;
     height: 100px;
     background-color: #000000;
 }
@@ -62,6 +61,54 @@ body{
 
 .main{
     display: flex;
+    position: static;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+}
+.main_conjunto{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: auto;
+    margin-left: 20px;
+}
+
+.container_historias{
+    display: flex;
+    height: 100px;
+    width: 50vw;
+    min-width: 20vw;
+    padding: 30px 0 0 0;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.historia-conjunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+}
+
+
+.historia-circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 48px;
+    margin-bottom: 5px;
+    border-radius: 100px;
+    background-image: linear-gradient(to left bottom, #a92dd5, #ff0099, #ff5256, #ffa407, #ebe712);
+}
+
+.historia-circulo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
 }
