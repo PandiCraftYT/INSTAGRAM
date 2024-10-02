@@ -64,6 +64,7 @@ body{
 }
 
 .main{
+    position: relative;
     display: grid;
     flex-wrap: wrap;
     justify-items: center;
@@ -256,16 +257,17 @@ body{
 
 .main-conjunto-publicaciones{
     position: absolute;
-    top: -400px;
+    top: 80px;
+    right: 100px;
     width: 400px;
     height: auto;
-    margin: 0 auto;
     background-color: #0085db;
 }
 .publicacion-contenido{
     width: 400px;
+    min-width: 200px;
     height: auto;
-    margin: 0 0 40px 0;
+    margin: 0 150px 40px 0;
 }
 .contenido-cabecera{
     display: flex;
@@ -328,4 +330,12 @@ body{
 .reacciones-publicacion img{
     width: 25px;
     height: 30px;
+}
+
+.divisora-linea{
+    display: flex;
+    height: 1px;
+    width: 400px;
+    margin-top: 40px;
+    background-color: rgb(153, 153, 153);
 }
