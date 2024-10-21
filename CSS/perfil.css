@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    width: 100%;
+    height: auto;
+    font-size: 62.5%;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+.perfil-informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    min-height: 250px;
+    width: 100%;
+}
+.perfil-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100px;
+}
+.perfil-img img{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.informacion-pefil-contenedor{
+    width: 300px;
+}
+.perfil-interaccion{
+    display: flex;
+    height: 50px;
+    width: 300px;
+}
+.nombre-perfil{
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+.perfil-seguir {
+    width: 100px;
+    height: 18px;
+    margin: 0 10px 0 30px;
+    background-color: #5a5a5a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+}
+.perfil-mensaje {
+    width: 100px;
+    height: 18px;
+    margin-right: 20px;
+    background-color: #555454;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+}
+.perfil-mas{
+    width: 30px;
+    height: 30px;
+}
+.perfil-interaccion img{
+    width: 10px;
+    height: 10px;
+}
+.perfil-conteo{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    height: 50px;
+}
+.perfil-conteo p{
+    margin: 0 1px;
+}
+.perfil-publicaciones{
+    display: flex;    
+}
+.publicaiones-conteo{
+    font-weight: 600;
+}
+.perfil-seguidores{
+    display: flex;
+}
+.seguidores-conteo{
+    font-weight: 600;
+}
+.perfil-seguidos{
+    display: flex;
+}
+.seguidos-conteo{
+    font-weight: 600;
+}
