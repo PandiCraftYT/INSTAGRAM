@@ -5,6 +5,9 @@
     outline: 0;
     text-decoration: none;
 }
+.custom-cursor{
+    cursor: pointer; /* Cambia el icono del cursor cuando pases sobre la imagen */
+}
 
 body {
     background-color: #fff;
