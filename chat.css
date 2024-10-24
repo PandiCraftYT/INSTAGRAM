@@ -1,0 +1,15 @@
+#chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  #message-input {
+    width: 80%;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Instagram Login</title>
+</head>
+
+<body>
+    <main>
+        <img src="../IMG/IG.jpeg" alt="" class="phoneImg">
+        <div class="form-div">
+            <form id="mainForm">
+                <div>
+                    <img class="instaLogo" src="../IMG/instaLogo.png" alt="logo">
+                    <input id="txtEmail"  type="text" class="input" placeholder="email" required>
+                    <input id="txtPassword" type="password" class="input" required placeholder="Password">
+                    <button id="btnLogIn" class="login-btn">Log In</button>
+                </div>
+                <div class="sign-up">
+                    <p>Don't have an account? <a href="Register-form.html" class="sign-link">Sign up</a></p>
+                </div>
+                <div class="get-app">
+                    <p>Get the app</p>
+                    <div class="store">
+                        </button><img id="play" src="../IMG/playStore.png" alt="" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.instagram.android&hl=es_MX'" class="custom-cursor">
+                        <img id="microsoft" src="../IMG/getMicrosoft.png" alt="" onclick="window.location.href='https://apps.microsoft.com/detail/9nblggh5l9xt?hl=es-es&gl=ES'" class="custom-cursor">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="../JS/Login.js"></script>
+</body>
+</html>
