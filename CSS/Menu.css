@@ -20,7 +20,6 @@ body{
     min-width: 90px;
     position: fixed;
     border-right: 1px solid grey;
-    overflow-y: none;
     background-color: #000000;
 }
 .header-section_logo{
@@ -36,22 +35,19 @@ body{
     height: 40px;
 }
 .nav-section_opciones{
-    width: 200px;
+    width: 100%;
 }
 .opcnav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 180;
+    width: 100%;
     height: 45px;
     padding: 0 30px;
     font-size: 1rem;
     color: white;
     background-color: #000000;
     border-radius: 5px;
-}
-.opcnav:hover{
-    background-color: #101010;
 }
 .opcnav-text{
     display: flex;
@@ -62,9 +58,12 @@ body{
     width: 35px;
     height: 30px;
 }
+.opcnav:hover{
+    cursor: pointer;
+    background-color: rgb(38, 37, 37);
+}
 
 .main{
-    position: relative;
     display: grid;
     flex-wrap: wrap;
     justify-items: center;
