@@ -267,6 +267,7 @@ body{
     min-width: 200px;
     height: auto;
     margin: 0 150px 40px 0;
+    color: white;
 }
 .contenido-cabecera{
     display: flex;
@@ -311,30 +312,95 @@ body{
 .contenido-img{
     width: inherit;
     height: 450px;
+    border-radius: 5px;
 }
 .contenido-reacciones-publicacion{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: inherit;
-    height: 30px;
+    height: 40px;
+}
+.contenido-reacciones-publicacion img{
+    width: 25px;
+    height: 25px;
+    margin: 13px 0;
+}
+.contenido-reacciones-publicacion img:hover{
+    cursor: pointer;
 }
 .reacciones-publicacion{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 200px;
     height: 10px;
 }
 .reacciones-publicacion img{
-    width: 25px;
-    height: 30px;
+    margin-right: 12px;
 }
 
+.contenido-cierre-publicacion{
+    height: auto;
+    font-size: 0.9rem;
+}
+.publicacion-likes{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin: 8px 0;
+    font-weight: 600;
+    color: white;
+}
+.publicacion-usuario{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 10px 0;
+    height: auto;
+    color: white;
+}
+.publicacion-usuario #nombre-usuario:hover{
+    cursor: pointer;
+}
+
+.comentario-usuario-publicacion{
+    padding-left: 10px;
+    color: white;
+    font-size: 0.9rem;
+}
+.comentarios-publicacion{
+    color: grey;
+}
+.comentarios-publicacion:hover{
+    cursor: pointer;
+}
+
+#comentario-usuario-post{
+    height: auto;
+    width: 390px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+#comentario-usuario-post::after{
+    border: none;  
+}
+#comentario-usuario-publicar{
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #000000;
+    color: #0095f6;
+    border: none;
+}
+#comentario-usuario-publicar:hover{
+    cursor: pointer;
+}
 .divisora-linea{
     display: flex;
     height: 1px;
     width: 400px;
-    margin-top: 40px;
-    background-color: rgb(153, 153, 153);
+    margin-top: 20px;
+    background-color: rgb(135, 135, 135);
 }
