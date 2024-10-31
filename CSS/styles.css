@@ -91,20 +91,21 @@ main {
 .get-app {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: center; 
     margin-top: 20px;
 }
-
 .store {
     display: flex;
     align-items: center;
 }
-
 #play {
-    width: 190px;
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
 }
 
 #microsoft {
     width: 135px;
+    height: 50px;
     border-radius: 8px;
 }
