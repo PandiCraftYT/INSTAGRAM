@@ -1,13 +1,42 @@
-//primero se convierte la clase a una constante llamada btnInicioM, lo que esta entre parentesis es el nombre de la clase que esta en html .opcion-inicio
-//por lo cual cuando se haga click en esa opcion ocurrira lo siguiente
 const btnInicioM = document.querySelector('.opcion-inicio');
+const btnBuscarM = document.querySelector('.opcion-buscar');
+const btnExplorarM = document.querySelector('.opcion-explorar');
+const btnReelsM = document.querySelector('.opcion-reels');
+const btnMensajesM = document.querySelector('.opcion-mensajes');
+const btnNotificacionesM = document.querySelector('.opcion-notificaciones');
+const btnCrearM = document.querySelector('.opcion-crear');
+const btnPerfilM = document.querySelector('.opcion-perfil');
 
-//despues con el nombre de la constente que hace referencia a la clase de html llamada .opcion-inicio mandara llamar una funcion del evento click
-btnInicioM.addEventListener('click',clickeo);
-//...aqui pondras el nombre de la constante y pones .addEventListener('click,clickeo')
+btnInicioM.addEventListener('click', redireccionMenu);
+btnBuscarM.addEventListener('click', redireccionBuscar);
+btnExplorarM.addEventListener('click', redireccionExplorar);
+btnReelsM.addEventListener('click', redireccionReels);
+btnMensajesM.addEventListener('click', redireccionMensajes);
+btnNotificacionesM.addEventListener('click', redireccionNotificaciones);
+btnCrearM.addEventListener('click', redireccionCrear);
+btnPerfilM.addEventListener('click', redireccionPerfil);
 
-//aqui esta el funcionamiento de la funcion, aqui mismo puedes poner las rutas de los demas enlaces
-//esta sola funcion servira para todas las constantes/clases que ocupes redireccionar
-function clickeo (click){
+function redireccionMenu (click){
     window.location.href = "./Menu.html";
+}
+function redireccionBuscar (click){
+    window.location.href = "../LeftMenu/Buscar.html";
+}
+function redireccionExplorar (click){
+    window.location.href = "../LeftMenu/Explorar.html";
+}
+function redireccionReels (click){
+    window.location.href = "../LeftMenu/Reels.html";
+}
+function redireccionMensajes (click){
+    window.location.href = "../LeftMenu/Mensajes.html";
+}
+function redireccionNotificaciones (click){
+    window.location.href = "../LeftMenu/Notificaciones.html";
+}
+function redireccionCrear (click){
+    window.location.href = "../LeftMenu/Crear.html";
+}
+function redireccionPerfil (click){
+    window.location.href = "../LeftMenu/Perfil.html";
 }
