@@ -1,0 +1,72 @@
+<!-- Nota: AGREGAR COMENTARIOS PARA SABER QUE HACE CADA FUNCION -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensajeria</title>
+  <link rel="stylesheet" href="../CSS/Mensajeria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome (Para los iconos) -->
+</head>
+<body>
+  <div class="container">
+    <!-- Esta sera la barra lateral donde se muestran las conversaciones que tenemos-->
+    <div class="sidebar"> 
+      <header>
+        <h2>Usuario</h2>
+      </header>
+      <!-- Estos es la lista de mensajes que tendremos disponibles  -->
+      <ul class="message-list">
+        <li class="message-item" onclick="openChat('Jose')">
+          <i class="fas fa-user-circle profile-pic"></i> <!-- Referencia al icono del perfil-->
+          <div class="message-info">
+            <h3>Jose</h3>
+            <p>Activo(a) hace 7 horas</p>
+          </div>
+        </li>
+        <li class="message-item" onclick="openChat('Jesus')">
+          <i class="fas fa-user-circle profile-pic"></i> <!-- Referencia al icono del perfil-->
+          <div class="message-info">
+            <h3>Jesus</h3>
+            <p>Hola • 4 semanas</p>
+          </div>
+        </li>
+        <!-- /* FIN de la lista de amigos disponibles -->
+      </ul>
+    </div>
+
+    <!-- Funcion de la ventana del chat al hacer click en un amigo de los de la lista -->
+    <div class="chat-window">
+      <div id="default-message">
+        <p>Selecciona un mensaje para ver la conversación.</p>
+      </div>
+      <div id="chat-content" class="hidden">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <i class="fas fa-user-circle profile-pic-large"></i> <!-- Icono de perfil grande -->
+            <div>
+              <h3 id="chat-username">Nombre del usuario</h3>
+            </div>
+          </div>
+          <div class="chat-header-icons">
+            <i class="fas fa-phone"></i> <!-- Icono de llamada -->
+            <i class="fas fa-video"></i> <!-- Icono de video llamada -->
+            <i class="fas fa-info-circle"></i> <!-- Icono de información -->
+          </div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <!-- Mensajes del chat -->
+        </div>
+        <div class="chat-input">
+          <i class="far fa-smile"></i> <!-- Icono de emoji -->
+          <input type="text" placeholder="Escribe un mensaje..." id="message-input">
+          <i class="fas fa-paper-plane" onclick="sendMessage()"></i> <!-- Icono de enviar -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/Mensajeria.js"></script>
+</body>
+</html>

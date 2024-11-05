@@ -29,7 +29,7 @@ function redireccionReels (click){
     window.location.href = "../LeftMenu/Reels.html";
 }
 function redireccionMensajes (click){
-    window.location.href = "../LeftMenu/Mensajes.html";
+    window.location.href = "../LeftMenu/Mensajeria.html";
 }
 function redireccionNotificaciones (click){
     window.location.href = "../LeftMenu/Notificaciones.html";
